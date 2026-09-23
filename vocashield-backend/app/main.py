@@ -40,6 +40,8 @@ app.add_middleware(
 # Includes API Endpoints
 app.include_router(analysis.router, prefix=settings.API_V1_STR)
 app.include_router(contacts.router, prefix=settings.API_V1_STR + "/contacts")
+from app.api import test_audio
+app.include_router(test_audio.router, prefix=settings.API_V1_STR)
 app.include_router(websocket_router)
 
 @app.get("/health")

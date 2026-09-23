@@ -134,6 +134,7 @@ def run_synchronous_pipeline(session_id: str, audio_float: np.ndarray, current_t
             "level": risk_assessment["risk_level"]
         },
         "attack_patterns": attack_patterns,
+        "recommendations": recommendations,
         "performance": performance,
         "chunk_text": chunk_text,
         "audio_quality": audio_quality

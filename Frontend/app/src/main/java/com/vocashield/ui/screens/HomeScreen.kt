@@ -56,6 +56,7 @@ fun HomeScreen(
     recentCalls: List<CallAnalysis>,
     isProtected: Boolean,
     onStartSimulation: () -> Unit,
+    onOpenTestLibrary: () -> Unit,
     onOpenSettings: () -> Unit,
     onSelectCall: (CallAnalysis) -> Unit,
     modifier: Modifier = Modifier
@@ -169,7 +170,20 @@ fun HomeScreen(
             }
         }
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(16.dp))
+        
+        Button(
+            onClick = onOpenTestLibrary,
+            colors = ButtonDefaults.buttonColors(containerColor = SurfaceNavy),
+            modifier = Modifier.fillMaxWidth().height(56.dp),
+            shape = RoundedCornerShape(12.dp)
+        ) {
+            Icon(imageVector = Icons.Default.PlayArrow, contentDescription = null, tint = PrimaryBlue)
+            Spacer(modifier = Modifier.width(8.dp))
+            Text(text = "Test Audio Library (ASVspoof)", color = TextPrimary, fontWeight = FontWeight.Bold)
+        }
+
+        Spacer(modifier = Modifier.height(20.dp))
 
         // Recent Calls Header
         Row(

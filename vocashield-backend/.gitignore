@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Mock audio files
+test_audio/*.wav
+test_audio/*.mp3
+test_audio/*.m4a
+!test_audio/.keep
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Pyform
+.vscode/
+.idea/

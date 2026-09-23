@@ -1,0 +1,10 @@
+﻿.gradle/
+build/
+local.properties
+.idea/
+*.iml
+/vocashield-backend/venv/
+/vocashield-backend/__pycache__/
+/vocashield-backend/.env
+*.apk
+Frontend/gradle-8.7-bin.zip

@@ -1,0 +1,8 @@
+{
+  "name": "vocashield-app",
+  "version": "1.0.0",
+  "description": "VocaShield Native Android Jetpack Compose Application",
+  "scripts": {
+    "info": "echo VocaShield is a native Android project. Open c:\\innovatex in Android Studio or run gradlew assembleDebug."
+  }
+}

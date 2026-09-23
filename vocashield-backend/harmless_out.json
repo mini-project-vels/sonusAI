@@ -1,0 +1,66 @@
+{
+  "success": true,
+  "analysis_id": "2fcf2336-dcc5-43ac-9d9a-4da7a365e16a",
+  "processing_time_ms": 2344,
+  "audio": {
+    "duration_seconds": 4.48,
+    "original_sample_rate": 24000,
+    "processed_sample_rate": 16000,
+    "original_channels": 1,
+    "processed_channels": 1
+  },
+  "deepfake": {
+    "fake_probability": 0.03839965537190437,
+    "real_probability": 0.9616003036499023,
+    "prediction": "REAL",
+    "model": "AASIST",
+    "metadata": {
+      "windows_analyzed": 2,
+      "inference_device": "cpu"
+    }
+  },
+  "transcription": {
+    "text": "Hey, just planning out the schedule for tomorrow. See you then.",
+    "language": "en"
+  },
+  "scam_analysis": {
+    "scam_behavior_score": 0,
+    "signals": {
+      "financial_request": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "credential_request": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "urgency": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "secrecy": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "impersonation": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "threat_or_pressure": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "payment_redirection": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      }
+    }
+  }
+}

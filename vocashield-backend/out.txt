@@ -1,0 +1,32 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\vocalAI\vocashield-backend
+plugins: anyio-4.15.1, asyncio-1.4.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 1 item
+
+tests\test_websocket.py F                                                [100%]
+
+================================== FAILURES ===================================
+__________________________ test_websocket_start_stop __________________________
+tests\test_websocket.py:15: in test_websocket_start_stop
+    assert error_resp["type"] == "error"
+E   AssertionError: assert 'caller_context' == 'error'
+E     
+E     - error
+E     + caller_context
+------------------------------ Captured log call ------------------------------
+ERROR    app.api.websocket:websocket.py:326 WebSocket unhandled error: Cannot call "receive" once a disconnect message has been received.
+============================== warnings summary ===============================
+venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\vocalAI\vocashield-backend\venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+venv\Lib\site-packages\starlette\testclient.py:53
+  C:\vocalAI\vocashield-backend\venv\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_websocket.py::test_websocket_start_stop - AssertionError: a...
+======================== 1 failed, 2 warnings in 3.26s ========================

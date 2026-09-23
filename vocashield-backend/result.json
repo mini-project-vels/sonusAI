@@ -1,0 +1,97 @@
+{
+  "success": true,
+  "analysis_id": "ef528e6a-f9db-487c-a742-82f5ced98215",
+  "processing_time_ms": 1948,
+  "audio": {
+    "duration_seconds": 3.0,
+    "original_sample_rate": 16000,
+    "processed_sample_rate": 16000,
+    "original_channels": 1,
+    "processed_channels": 1
+  },
+  "deepfake": {
+    "fake_probability": 1.0,
+    "real_probability": 4.723472724066369e-10,
+    "prediction": "FAKE",
+    "model": "AASIST",
+    "metadata": {
+      "windows_analyzed": 1,
+      "inference_device": "cpu"
+    }
+  },
+  "transcription": {
+    "text": "",
+    "language": "en"
+  },
+  "scam_analysis": {
+    "scam_behavior_score": 0,
+    "signals": {
+      "financial_request": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "credential_request": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "urgency": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "secrecy": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "impersonation": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "threat_or_pressure": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "payment_redirection": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      }
+    }
+  },
+  "risk_assessment": {
+    "voice_risk": 100,
+    "scam_behavior_risk": 0,
+    "context_risk": 30,
+    "identity": {
+      "known_number": false,
+      "trusted_contact": false,
+      "claimed_identity": "UNKNOWN",
+      "identity_match": true,
+      "identity_risk": 40,
+      "verification_status": "NOT_AVAILABLE"
+    },
+    "overall_risk_score": 44,
+    "risk_level": "MEDIUM",
+    "risk_factors": [
+      {
+        "factor": "Synthetic voice characteristics",
+        "score": 100,
+        "contribution": "HIGH"
+      },
+      {
+        "factor": "Unknown phone number",
+        "score": 40,
+        "contribution": "MEDIUM"
+      }
+    ],
+    "attack_patterns": [],
+    "recommendations": [
+      "Voice characteristics indicate possible synthetic or manipulated audio."
+    ]
+  }
+}

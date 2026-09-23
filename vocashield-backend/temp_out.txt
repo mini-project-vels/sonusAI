@@ -1,0 +1,71 @@
+{
+  "success": true,
+  "analysis_id": "f99b1d87-4436-4295-bf9e-7ef1257b1bd2",
+  "processing_time_ms": 2646,
+  "audio": {
+    "duration_seconds": 8.06,
+    "original_sample_rate": 24000,
+    "processed_sample_rate": 16000,
+    "original_channels": 1,
+    "processed_channels": 1
+  },
+  "deepfake": {
+    "fake_probability": 0.7501665353775024,
+    "real_probability": 0.24983350932598114,
+    "prediction": "FAKE",
+    "model": "AASIST",
+    "metadata": {
+      "windows_analyzed": 2,
+      "inference_device": "cpu"
+    }
+  },
+  "transcription": {
+    "text": "Hi Sun, I am in an emergency. Please transfer 50,000 rupees immediately. Do not tell anyone.",
+    "language": "en"
+  },
+  "scam_analysis": {
+    "scam_behavior_score": 40,
+    "signals": {
+      "financial_request": {
+        "detected": true,
+        "confidence": 0.7,
+        "evidence": [
+          "rupees"
+        ]
+      },
+      "credential_request": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "urgency": {
+        "detected": true,
+        "confidence": 0.9,
+        "evidence": [
+          "immediately",
+          "emergency"
+        ]
+      },
+      "secrecy": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "impersonation": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "threat_or_pressure": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      },
+      "payment_redirection": {
+        "detected": false,
+        "confidence": 0.0,
+        "evidence": []
+      }
+    }
+  }
+}
